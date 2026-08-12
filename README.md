@@ -1,7 +1,3 @@
-# Ecosid.
-Trabalho Acadêmico - em desenvolvimento 
-
-
 # 🌱 EcoSid
 
 ## Sistema Digital de Monitoramento para a Otimização da Coleta de Lixo Reciclável na Cidade de Sidrolândia
@@ -71,3 +67,60 @@ EcoSid/
 │   └── mapa.html
 │
 └── imagens/
+
+
+
+
+
+
+
+
+🎨 Desenvolvimento
+
+Durante o desenvolvimento, foi utilizado o Bootstrap como framework para auxiliar na construção de uma interface responsiva e organizada.
+
+O projeto também utiliza CSS próprio para personalização das páginas, mantendo uma identidade visual baseada em tons de verde relacionados à sustentabilidade e à reciclagem.
+
+O JavaScript foi utilizado principalmente para implementar a pesquisa dos locais de coleta e a interação com o mapa dos ecopontos.
+
+📱 Responsividade
+
+A plataforma foi desenvolvida para funcionar em diferentes tamanhos de tela, incluindo:
+
+Computadores;
+Notebooks;
+Tablets;
+Smartphones.
+
+Foram utilizados recursos de CSS e Bootstrap para adaptar os elementos da interface aos diferentes dispositivos.
+
+🗺️ Mapa
+
+A localização dos ecopontos é apresentada utilizando a biblioteca Leaflet, com mapas baseados em dados do OpenStreetMap.
+
+Os marcadores permitem consultar os pontos diretamente pelo mapa.
+
+🌱 Educação Ambiental
+
+A plataforma também apresenta informações educativas sobre:
+
+Separação de resíduos;
+Papel;
+Plástico;
+Vidro;
+Metal;
+Processo de reciclagem;
+Práticas sustentáveis.
+📅 Coleta Seletiva
+
+O sistema apresenta os locais atendidos pela coleta seletiva de acordo com os dias da semana.
+
+A pesquisa permite que o usuário informe o nome do bairro ou local para consultar o dia correspondente da coleta.
+
+👩‍💻 Projeto acadêmico
+
+Projeto desenvolvido como parte das atividades acadêmicas do curso de Tecnologia da Informação.
+
+EcoSid — Sistema Digital de Monitoramento para a Otimização da Coleta de Lixo Reciclável na Cidade de Sidrolândia.
+
+© 2026 EcoSid - Em desenvolvimento
