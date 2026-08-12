@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Calendário da coleta seletiva de Sidrolândia.">
+
+    <title>EcoSid | Calendário de Coleta</title>
+
+
+    <!-- ==========================================
+         BOOTSTRAP
+    =========================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- ==========================================
+         CSS PRINCIPAL
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css">
+
+
+    <!-- ==========================================
+         CSS DA PÁGINA
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../css/calendario.css">
+
+
+    <!-- ==========================================
+         FONT AWESOME
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <!-- ==========================================
+         GOOGLE FONTS
+    =========================================== -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header>
+
+    <nav
+        class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm"
+        aria-label="Navegação principal">
+
+        <div class="container">
+
+
+            <!-- LOGO -->
+
+            <a
+                class="navbar-brand fw-bold"
+                href="../index.html"
+                aria-label="EcoSid - Página inicial">
+
+                <i
+                    class="fa-solid fa-recycle"
+                    aria-hidden="true">
+                </i>
+
+                EcoSid
+
+            </a>
+
+
+            <!-- MENU MOBILE -->
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- MENU -->
+
+            <div
+                class="collapse navbar-collapse"
+                id="menuPrincipal">
+
+                <ul class="navbar-nav ms-auto">
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="../index.html">
+
+                            Início
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="sobre.html">
+
+                            Sobre
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="ecopontos.html">
+
+                            Ecopontos
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="calendario.html">
+
+                            Calendário
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="educacao.html">
+
+                            Educação Ambiental
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     CONTEÚDO PRINCIPAL
+===================================================== -->
+
+<main>
+
+
+    <!-- =================================================
+         HERO
+    ================================================== -->
+
+    <section
+        class="calendar-hero"
+        aria-labelledby="titulo-calendario">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <span class="calendar-label">
+
+                    COLETA SELETIVA
+
+                </span>
+
+
+                <h1 id="titulo-calendario">
+
+                    Calendário de Coleta
+
+                </h1>
+
+
+                <p>
+
+                    Consulte o dia e o horário da coleta
+                    seletiva no seu bairro.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         ÁREA DE CONSULTA
+    ================================================== -->
+
+    <section
+        class="calendar-container"
+        aria-labelledby="titulo-consulta">
+
+        <div class="container">
+
+
+            <!-- TÍTULO -->
+
+            <div class="calendar-heading text-center">
+
+                <span>
+
+                    CONSULTA
+
+                </span>
+
+
+                <h2 id="titulo-consulta">
+
+                    Consulte seu bairro
+
+                </h2>
+
+
+                <p>
+
+                    Digite o nome do bairro para encontrar
+                    o dia e horário da coleta.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PESQUISA
+            ================================================== -->
+
+            <div class="calendar-search">
+
+                <div class="row g-3 align-items-center">
+
+
+                    <div class="col-12 col-md-9">
+
+                        <label
+                            for="buscar-bairro"
+                            class="visually-hidden">
+
+                            Digite o nome do bairro
+
+                        </label>
+
+
+                        <div class="search-input">
+
+                            <i
+                                class="fa-solid fa-magnifying-glass"
+                                aria-hidden="true">
+                            </i>
+
+
+                            <input
+                                id="buscar-bairro"
+                                type="search"
+                                placeholder="Digite o nome do bairro..."
+                                autocomplete="off">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-12 col-md-3">
+
+                        <button
+                            id="btn-consultar"
+                            type="button"
+                            class="btn btn-success search-button">
+
+                            <i
+                                class="fa-solid fa-magnifying-glass"
+                                aria-hidden="true">
+                            </i>
+
+                            Consultar
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 TABELA
+            ================================================== -->
+
+            <div class="calendar-table">
+
+                <div class="table-responsive">
+
+                    <table
+                        class="table align-middle"
+                        aria-label="Calendário da coleta seletiva">
+
+                        <thead>
+
+                            <tr>
+
+                                <th scope="col">
+
+                                    <i
+                                        class="fa-solid fa-location-dot"
+                                        aria-hidden="true">
+                                    </i>
+
+                                    Local / Bairro
+
+                                </th>
+
+
+                                <th scope="col">
+
+                                    <i
+                                        class="fa-solid fa-calendar-days"
+                                        aria-hidden="true">
+                                    </i>
+
+                                    Dia da coleta
+
+                                </th>
+
+
+                                <th scope="col">
+
+                                    <i
+                                        class="fa-regular fa-clock"
+                                        aria-hidden="true">
+                                    </i>
+
+                                    Horário
+
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <!--
+                            Os dados serão inseridos
+                            automaticamente pelo coleta.js
+                        -->
+
+                        <tbody id="tabela-coleta">
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 MENSAGEM SEM RESULTADO
+            ================================================== -->
+
+            <div
+                id="sem-resultado"
+                class="no-result d-none">
+
+                <i
+                    class="fa-solid fa-calendar-xmark"
+                    aria-hidden="true">
+                </i>
+
+
+                <h3>
+
+                    Local não encontrado
+
+                </h3>
+
+
+                <p>
+
+                    Verifique o nome digitado e tente novamente.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="container text-center">
+
+        <p>
+
+            © 2026 EcoSid - Sistema de Coleta Seletiva
+
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="../js/coleta.js"></script>
+
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+</body>
+
+</html>

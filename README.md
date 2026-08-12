@@ -70,11 +70,6 @@ EcoSid/
 
 
 
-
-
-
-
-
 🎨 Desenvolvimento
 
 Durante o desenvolvimento, foi utilizado o Bootstrap como framework para auxiliar na construção de uma interface responsiva e organizada.
@@ -123,4 +118,4 @@ Projeto desenvolvido como parte das atividades acadêmicas do curso de Tecnologi
 
 EcoSid — Sistema Digital de Monitoramento para a Otimização da Coleta de Lixo Reciclável na Cidade de Sidrolândia.
 
-© 2026 EcoSid - Em desenvolvimento
+© 2026 EcoSid - Em desenvolvimento 

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoSid | Mapa dos Ecopontos</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- CSS do mapa -->
+    <link rel="stylesheet" href="../css/mapa.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Leaflet -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet/dist/leaflet.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     CABEÇALHO
+========================================== -->
+
+<header>
+
+    <div class="logo">
+
+        <i class="fa-solid fa-recycle"></i>
+
+        <h2>EcoSid</h2>
+
+    </div>
+
+
+    <nav>
+
+        <a href="../index.html">
+            Início
+        </a>
+
+        <a href="sobre.html">
+            Sobre
+        </a>
+
+        <a href="ecopontos.html">
+            Ecopontos
+        </a>
+
+        <a href="calendario.html">
+            Coleta
+        </a>
+
+        <a href="educacao.html">
+            Educação Ambiental
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- ==========================================
+     HERO
+========================================== -->
+
+<section class="map-hero">
+
+    <h1>
+
+        <i class="fa-solid fa-location-dot"></i>
+
+        Mapa dos Ecopontos
+
+    </h1>
+
+
+    <p>
+
+        Consulte a localização dos ecopontos disponíveis em Sidrolândia.
+
+    </p>
+
+</section>
+
+
+<!-- ==========================================
+     MAPA
+========================================== -->
+
+<section class="map-container">
+
+
+    <div class="map-box">
+
+        <div id="map"></div>
+
+    </div>
+
+
+    <!-- INFORMAÇÃO -->
+
+    <div class="map-info">
+
+        <i class="fa-solid fa-circle-info"></i>
+
+        <p>
+
+            Clique nos marcadores do mapa para consultar
+            as informações de cada ecoponto.
+
+        </p>
+
+    </div>
+
+
+    <!-- BOTÃO VOLTAR -->
+
+    <div class="back-button">
+
+        <a href="ecopontos.html" class="btn btn-success">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Voltar para Ecopontos
+
+        </a>
+
+    </div>
+
+
+</section>
+
+
+<!-- ==========================================
+     RODAPÉ
+========================================== -->
+
+<footer>
+
+    <p>
+
+        © 2026 EcoSid - Sistema de Coleta Seletiva
+
+    </p>
+
+</footer>
+
+
+<!-- Leaflet -->
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+
+<!-- JavaScript do mapa -->
+
+<script src="../js/mapa.js"></script>
+
+
+<!-- Bootstrap -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+</body>
+
+</html>

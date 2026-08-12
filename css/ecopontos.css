@@ -1,0 +1,467 @@
+/* ==========================================
+   ECOSID - PÁGINA ECOPONTOS
+========================================== */
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.eco-hero {
+    background: linear-gradient(135deg, #e8f5e9, #ffffff);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.eco-hero h1 {
+    color: #1b5e20;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.eco-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #666;
+}
+
+
+/* ==========================================
+   ÁREA DOS ECOPONTOS
+========================================== */
+
+.eco-card {
+    border: none !important;
+    border-radius: 20px !important;
+    background: #ffffff;
+
+    padding: 30px !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.eco-card a.btn,
+.eco-card button {
+    display: block !important;
+    width: 100% !important;
+
+    background-color: #1b5e20 !important;
+    color: #ffffff !important;
+
+    border: 1px solid #1b5e20 !important;
+    border-radius: 10px !important;
+
+    padding: 12px 16px !important;
+    margin-top: 20px !important;
+
+    text-align: center !important;
+
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+/* ==========================================
+   GRID DOS CARDS
+========================================== */
+
+#lista-ecopontos {
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 30px !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+}
+
+
+/* ==========================================
+   COLUNA DO CARD
+========================================== */
+
+#lista-ecopontos .ecoponto-item {
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    padding: 0 !important;
+
+    margin: 0 !important;
+
+}
+
+
+/* ==========================================
+   CARD
+========================================== */
+
+.eco-card {
+
+    width: 100% !important;
+
+    height: 100% !important;
+
+    min-height: 340px;
+
+    border: none !important;
+
+    border-radius: 20px !important;
+
+    background: #ffffff !important;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+/* Efeito ao passar o mouse */
+
+.eco-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12) !important;
+
+}
+
+
+/* ==========================================
+   CONTEÚDO DO CARD
+========================================== */
+
+.eco-card .card-body {
+
+    padding: 30px !important;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+/* ==========================================
+   ÍCONE
+========================================== */
+
+.eco-icon {
+
+    width: 60px;
+
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #e8f5e9;
+
+    color: #1b5e20;
+
+    border-radius: 50%;
+
+    font-size: 1.5rem;
+
+    flex-shrink: 0;
+
+}
+
+
+/* ==========================================
+   TÍTULO
+========================================== */
+
+.eco-card h3 {
+
+    color: #1b5e20;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* ==========================================
+   INFORMAÇÕES
+========================================== */
+
+.eco-info-list {
+
+    flex-grow: 1;
+
+}
+
+
+.eco-card p {
+
+    color: #666;
+
+    margin-bottom: 14px;
+
+    line-height: 1.6;
+
+}
+
+
+.eco-card p i {
+
+    width: 22px;
+
+    margin-right: 5px;
+
+}
+
+/* ==========================================
+   BOTÃO VER NO MAPA
+========================================== */
+
+.eco-card a.btn,
+.eco-card button {
+    display: block !important;
+
+    width: 100% !important;
+
+    box-sizing: border-box !important;
+
+    background-color: #1b5e20 !important;
+
+    color: #ffffff !important;
+
+    border: 1px solid #1b5e20 !important;
+
+    border-radius: 10px !important;
+
+    padding: 12px 16px !important;
+
+    margin-top: 20px !important;
+
+    text-align: center !important;
+
+    text-decoration: none !important;
+
+    font-family: 'Poppins', sans-serif !important;
+
+    font-size: 16px !important;
+
+    font-weight: 500 !important;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.eco-card a.btn:hover,
+.eco-card button:hover {
+
+    background-color: #157347 !important;
+
+    border-color: #157347 !important;
+
+    color: #ffffff !important;
+
+    transform: translateY(-2px);
+
+}
+
+/* ==========================================
+   PESQUISA
+========================================== */
+
+.input-group {
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+}
+
+
+.input-group .form-control {
+
+    border-left: 0;
+
+}
+
+
+.input-group .form-control:focus {
+
+    box-shadow: none;
+
+}
+
+
+.input-group-text {
+
+    border-right: 0;
+
+}
+
+
+/* ==========================================
+   ÁREA INFORMATIVA
+========================================== */
+
+.eco-info {
+
+    background: #f8f9fa;
+
+}
+
+
+.eco-info .card {
+
+    border-radius: 20px;
+
+}
+
+
+.eco-info h2 {
+
+    color: #1b5e20;
+
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 991px) {
+
+    #lista-ecopontos {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+    }
+
+}
+
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+@media (max-width: 767px) {
+
+    #lista-ecopontos {
+
+        grid-template-columns:
+            1fr !important;
+
+        gap: 20px !important;
+
+    }
+
+
+    .eco-hero {
+
+        padding: 50px 20px;
+
+    }
+
+
+    .eco-hero h1 {
+
+        font-size: 2rem;
+
+    }
+
+
+    .eco-hero p {
+
+        font-size: 1rem;
+
+    }
+
+
+    .eco-card {
+
+        min-height: auto;
+
+    }
+
+}
+
+
+/* ==========================================
+   CELULAR PEQUENO
+========================================== */
+
+@media (max-width: 576px) {
+
+    .eco-hero h1 {
+
+        font-size: 1.7rem;
+
+    }
+
+
+    .eco-content {
+
+        padding: 50px 15px;
+
+    }
+
+}
+
+/* ==========================================
+   BOTÃO VER NO MAPA
+========================================== */
+
+.eco-card a.btn {
+    display: block !important;
+    width: 100% !important;
+
+    background-color: #1b5e20 !important;
+    color: #ffffff !important;
+
+    border: 1px solid #1b5e20 !important;
+    border-radius: 10px !important;
+
+    padding: 11px 15px !important;
+
+    text-align: center;
+
+    text-decoration: none !important;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.eco-card a.btn:hover {
+    background-color: #157347 !important;
+
+    border-color: #157347 !important;
+
+    color: #ffffff !important;
+
+    transform: translateY(-2px);
+}

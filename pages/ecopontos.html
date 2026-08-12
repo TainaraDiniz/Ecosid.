@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Consulte os ecopontos disponíveis para descarte de materiais recicláveis em Sidrolândia.">
+
+    <title>EcoSid | Ecopontos</title>
+
+
+    <!-- ==========================================
+         BOOTSTRAP
+    =========================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- ==========================================
+         CSS DO PROJETO
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="../css/ecopontos.css">
+
+
+    <!-- ==========================================
+         FONT AWESOME
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <!-- ==========================================
+         GOOGLE FONTS
+    =========================================== -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header>
+
+    <nav
+        class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm"
+        aria-label="Navegação principal">
+
+        <div class="container">
+
+
+            <!-- LOGO -->
+
+            <a
+                class="navbar-brand fw-bold"
+                href="../index.html"
+                aria-label="EcoSid - Página inicial">
+
+                <i class="fa-solid fa-recycle"
+                   aria-hidden="true"></i>
+
+                EcoSid
+
+            </a>
+
+
+
+            <!-- BOTÃO MOBILE -->
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+
+            <!-- MENU -->
+
+            <div
+                class="collapse navbar-collapse"
+                id="menuPrincipal">
+
+                <ul class="navbar-nav ms-auto">
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="../index.html">
+
+                            Início
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="sobre.html">
+
+                            Sobre
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="ecopontos.html">
+
+                            Ecopontos
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="calendario.html">
+
+                            Calendário
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="educacao.html">
+
+                            Educação Ambiental
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     CONTEÚDO PRINCIPAL
+===================================================== -->
+
+<main>
+
+
+    <!-- =================================================
+         HERO
+    ================================================== -->
+
+    <section
+        class="eco-hero py-5"
+        aria-labelledby="titulo-ecopontos">
+
+        <div class="container">
+
+            <div class="text-center">
+
+
+                <span
+                    class="badge bg-success fs-6 px-3 py-2 mb-3">
+
+                    <i
+                        class="fa-solid fa-recycle"
+                        aria-hidden="true"></i>
+
+                    Descarte correto
+
+                </span>
+
+
+                <h1
+                    id="titulo-ecopontos">
+
+                    Ecopontos de Sidrolândia
+
+                </h1>
+
+
+                <p class="lead">
+
+                    Encontre locais adequados para realizar
+                    o descarte de materiais recicláveis
+                    na cidade.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         SEÇÃO DOS ECOPONTOS
+    ================================================== -->
+
+    <section
+        class="eco-content py-5"
+        aria-labelledby="titulo-encontre">
+
+        <div class="container">
+
+
+            <!-- TÍTULO -->
+
+            <div class="text-center mb-5">
+
+                <span class="text-success fw-bold">
+
+                    LOCALIZAÇÃO
+
+                </span>
+
+
+                <h2 id="titulo-encontre">
+
+                    Encontre um Ecoponto
+
+                </h2>
+
+
+                <p class="text-muted">
+
+                    Pesquise pelo nome do ecoponto
+                    ou pelo bairro.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CAMPO DE PESQUISA
+            ================================================== -->
+
+            <div class="row justify-content-center mb-5">
+
+                <div class="col-12 col-md-10 col-lg-7">
+
+
+                    <div class="input-group input-group-lg shadow-sm">
+
+
+                        <span class="input-group-text bg-white">
+
+                            <i
+                                class="fa-solid fa-magnifying-glass text-success"
+                                aria-hidden="true"></i>
+
+                        </span>
+
+
+                        <label
+                            for="buscar-ecoponto"
+                            class="visually-hidden">
+
+                            Pesquisar ecoponto ou bairro
+
+                        </label>
+
+
+                        <input
+                            id="buscar-ecoponto"
+                            type="search"
+                            class="form-control"
+                            placeholder="Pesquisar por bairro ou ecoponto..."
+                            autocomplete="off">
+
+
+                        <button
+                            id="btn-buscar"
+                            class="btn btn-success"
+                            type="button">
+
+                            Buscar
+
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CARDS DOS ECOPONTOS
+            ================================================== -->
+
+            <div
+                class="row g-4"
+                id="lista-ecopontos">
+
+
+
+                <!-- =============================================
+                     ECOPONTO CENTRAL
+                ============================================== -->
+
+                <article
+                    class="col-12 col-md-6 col-lg-4 ecoponto-item"
+                    data-nome="Ecoponto Central"
+                    data-bairro="Centro">
+
+                    <div
+                        class="card eco-card h-100 shadow-sm">
+
+
+                        <div class="card-body p-4">
+
+
+                            <div
+                                class="eco-icon mb-4"
+                                aria-hidden="true">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                            </div>
+
+
+                            <h3 class="h4">
+
+                                Ecoponto Central
+
+                            </h3>
+
+
+                            <div class="eco-info-list">
+
+
+                                <p>
+
+                                    <i
+                                        class="fa-solid fa-location-dot text-success"
+                                        aria-hidden="true"></i>
+
+                                    <span>
+
+                                        Centro
+
+                                    </span>
+
+                                </p>
+
+
+                                <p>
+
+                                    <i
+                                        class="fa-regular fa-clock text-success"
+                                        aria-hidden="true"></i>
+
+                                    <span>
+
+                                        Segunda a Sexta —
+                                        08:00 às 17:00
+
+                                    </span>
+
+                                </p>
+
+
+                                <p>
+
+                                    <i
+                                        class="fa-solid fa-recycle text-success"
+                                        aria-hidden="true"></i>
+
+                                    <span>
+
+                                        Papel, plástico,
+                                        vidro e metal
+
+                                    </span>
+
+                                </p>
+
+
+                            </div>
+
+
+                            <a href="mapa.html?local=central" class="btn btn-success">
+    <i class="fa-solid fa-map-location-dot"></i>
+    Ver no mapa
+</a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =============================================
+                     ECOPONTO SÃO BENTO
+                ============================================== -->
+
+                <article
+                    class="col-12 col-md-6 col-lg-4 ecoponto-item"
+                    data-nome="Ecoponto São Bento"
+                    data-bairro="São Bento">
+
+                    <div
+                        class="card eco-card h-100 shadow-sm">
+
+
+                        <div class="card-body p-4">
+
+
+                            <div
+                                class="eco-icon mb-4"
+                                aria-hidden="true">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                            </div>
+
+
+                            <h3 class="h4">
+
+                                Ecoponto São Bento
+
+                            </h3>
+
+
+                            <div class="eco-info-list">
+
+
+                                <p>
+
+                                    <i
+                                        class="fa-solid fa-location-dot text-success"
+                                        aria-hidden="true"></i>
+
+                                    <span>
+
+                                        Bairro São Bento
+
+                                    </span>
+
+                                </p>
+
+
+                                <p>
+
+                                    <i
+                                        class="fa-regular fa-clock text-success"
+                                        aria-hidden="true"></i>
+
+                                    <span>
+
+                                        Segunda a Sexta —
+                                        07:00 às 16:00
+
+                                    </span>
+
+                                </p>
+
+
+                                <p>
+
+                                    <i
+                                        class="fa-solid fa-recycle text-success"
+                                        aria-hidden="true"></i>
+
+                                    <span>
+
+                                        Papel, plástico
+                                        e eletrônicos
+
+                                    </span>
+
+                                </p>
+
+
+                            </div>
+
+
+                           <a href="mapa.html?local=sao-bento" class="btn btn-success">
+    <i class="fa-solid fa-map-location-dot"></i>
+    Ver no mapa
+</a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =============================================
+                     ECOPONTO JANDAIA
+                ============================================== -->
+
+                <article
+                    class="col-12 col-md-6 col-lg-4 ecoponto-item"
+                    data-nome="Ecoponto Jandaia"
+                    data-bairro="Jandaia">
+
+                    <div
+                        class="card eco-card h-100 shadow-sm">
+
+
+                        <div class="card-body p-4">
+
+
+                            <div
+                                class="eco-icon mb-4"
+                                aria-hidden="true">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                            </div>
+
+
+                            <h3 class="h4">
+
+                                Ecoponto Jandaia
+
+                            </h3>
+
+
+                            <div class="eco-info-list">
+
+
+                                <p>
+
+                                    <i
+                                        class="fa-solid fa-location-dot text-success"
+                                        aria-hidden="true"></i>
+
+                                    <span>
+
+                                        Região Jandaia
+
+                                    </span>
+
+                                </p>
+
+
+                                <p>
+
+                                    <i
+                                        class="fa-regular fa-clock text-success"
+                                        aria-hidden="true"></i>
+
+                                    <span>
+
+                                        Segunda a Sexta —
+                                        08:00 às 17:00
+
+                                    </span>
+
+                                </p>
+
+
+                                <p>
+
+                                    <i
+                                        class="fa-solid fa-recycle text-success"
+                                        aria-hidden="true"></i>
+
+                                    <span>
+
+                                        Vidro, metal
+                                        e plástico
+
+                                    </span>
+
+                                </p>
+
+
+                            </div>
+
+<a href="mapa.html?local=jandaia" class="btn btn-success">
+    <i class="fa-solid fa-map-location-dot"></i>
+    Ver no mapa
+</a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SEM RESULTADO
+            ================================================== -->
+
+            <div
+                id="sem-resultado"
+                class="text-center py-5 d-none">
+
+                <i
+                    class="fa-solid fa-magnifying-glass fa-3x text-muted mb-3"
+                    aria-hidden="true"></i>
+
+
+                <h3>
+
+                    Nenhum ecoponto encontrado
+
+                </h3>
+
+
+                <p class="text-muted">
+
+                    Tente pesquisar por outro bairro
+                    ou nome de ecoponto.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         INFORMAÇÃO
+    ================================================== -->
+
+    <section
+        class="eco-info py-5"
+        aria-labelledby="titulo-descarte">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-lg-9">
+
+
+                    <div class="card border-0 shadow-sm">
+
+
+                        <div
+                            class="card-body p-4 p-md-5 text-center">
+
+
+                            <i
+                                class="fa-solid fa-circle-info fa-3x text-success mb-4"
+                                aria-hidden="true"></i>
+
+
+                            <h2 id="titulo-descarte">
+
+                                Descarte corretamente
+
+                            </h2>
+
+
+                            <p>
+
+                                Separe corretamente os materiais
+                                recicláveis antes de levá-los ao
+                                ecoponto. Essa atitude contribui
+                                para a reciclagem e para uma
+                                cidade mais sustentável.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="bg-success text-white py-5">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+
+            <div class="col-12 col-lg-6">
+
+                <h2 class="h4">
+
+                    <i
+                        class="fa-solid fa-recycle"
+                        aria-hidden="true"></i>
+
+                    EcoSid
+
+                </h2>
+
+
+                <p class="text-white-50">
+
+                    Informações sobre coleta seletiva,
+                    ecopontos e educação ambiental
+                    em Sidrolândia.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="col-6 col-lg-3">
+
+                <h3 class="h6">
+
+                    Navegação
+
+                </h3>
+
+
+                <ul class="list-unstyled">
+
+
+                    <li class="mb-2">
+
+                        <a
+                            href="../index.html"
+                            class="text-white text-decoration-none">
+
+                            Início
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="mb-2">
+
+                        <a
+                            href="ecopontos.html"
+                            class="text-white text-decoration-none">
+
+                            Ecopontos
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="mb-2">
+
+                        <a
+                            href="calendario.html"
+                            class="text-white text-decoration-none">
+
+                            Calendário
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="col-6 col-lg-3">
+
+                <h3 class="h6">
+
+                    Informações
+
+                </h3>
+
+
+                <ul class="list-unstyled">
+
+
+                    <li class="mb-2">
+
+                        <a
+                            href="educacao.html"
+                            class="text-white text-decoration-none">
+
+                            Educação Ambiental
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="mb-2">
+
+                        <a
+                            href="sobre.html"
+                            class="text-white text-decoration-none">
+
+                            Sobre o EcoSid
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <hr class="border-light">
+
+
+        <div class="text-center">
+
+            <small>
+
+                © 2026 EcoSid — Sistema Digital de Coleta Seletiva
+
+            </small>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<script
+    src="../js/ecopontos.js">
+</script>
+
+
+<script>
+
+/* ==========================================
+   ENVIAR ECOPONTO PARA O MAPA
+========================================== */
+
+function selecionarEcoponto(lat, lng) {
+
+    const local = {
+
+        lat: lat,
+        lng: lng
+
+    };
+
+
+    localStorage.setItem(
+        "localMapa",
+        JSON.stringify(local)
+    );
+
+}
+
+</script>
+
+
+</body>
+
+</html>
