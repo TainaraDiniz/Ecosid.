@@ -114,11 +114,18 @@ A tabela ecoponto_material foi utilizada para estabelecer o relacionamento entre
 
 O relacionamento entre ecoponto e material é do tipo muitos-para-muitos, sendo representado pela tabela associativa ecoponto_material. Dessa forma, um ecoponto pode aceitar diferentes tipos de materiais e um mesmo material pode estar associado a diferentes ecopontos.
 
+
+### Estrutura das Tabelas
+
+![Estrutura das tabelas do banco de dados](imagens/tabela.png)
+
+*Figura  – Estrutura das tabelas utilizadas no banco de dados EcoSid.*
+
 ### Diagrama do Banco de Dados
 
 ![Diagrama do banco de dados EcoSid](imagens/diagramaa.png)
 
-*Figura 1 – Diagrama do banco de dados do projeto EcoSid.*
+*Figura  – Diagrama do banco de dados do projeto EcoSid.*
 
 6.2 Implementação e Manipulação de Dados
 
@@ -144,9 +151,21 @@ ORDER BY local;
 
 A consulta apresentou somente os locais cadastrados para a terça-feira, comprovando o funcionamento da filtragem dos dados.
 
+![Resultado da consulta de coleta de terça-feira](imagens/terca_feira.png)
+
+*Figura – Resultado da consulta SELECT filtrando as coletas de terça-feira.*
+
 Teste UPDATE
 
 Também foi realizado um teste utilizando o comando UPDATE. O horário de um registro foi temporariamente alterado para Manhã, sendo posteriormente restaurado ao valor original, Durante o dia. Esse procedimento permitiu verificar a capacidade de alteração dos registros sem manter modificações indevidas nos dados finais.
+
+![Resultado do UPDATE alterando o horário para manhã](imagens/manha.png)
+
+*Figura  – Registro após a alteração temporária do horário para Manhã.*
+
+![Resultado do UPDATE após restauração do horário](imagens/durante%20o%20dia.png)
+
+*Figura  – Registro após a restauração do horário original, Durante o dia.*
 
 Teste DELETE
 
@@ -158,6 +177,14 @@ DELETE FROM coleta
 WHERE local = 'TESTE DELETE';
 
 Após a execução, uma nova consulta confirmou que os registros de teste haviam sido removidos.
+
+![Execução do comando DELETE](imagens/delete.png)
+
+*Figura – Execução do comando DELETE para remoção dos registros de teste.*
+
+![Registros removidos após o DELETE](imagens/removido.png)
+
+*Figura – Verificação após a exclusão dos registros de teste.*
 
 Consulta JOIN
 
@@ -178,6 +205,10 @@ INNER JOIN material m
 ORDER BY e.nome;
 
 A consulta permitiu identificar os materiais associados a cada ecoponto, demonstrando o funcionamento dos relacionamentos entre as tabelas.
+
+![Resultado da consulta JOIN](imagens/join.png)
+
+*Figura  – Resultado da consulta JOIN relacionando ecopontos e materiais.*
 
 6.3 Uso do Controle de Versão
 
