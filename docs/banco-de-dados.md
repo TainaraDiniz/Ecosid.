@@ -114,11 +114,11 @@ A tabela ecoponto_material foi utilizada para estabelecer o relacionamento entre
 
 O relacionamento entre ecoponto e material é do tipo muitos-para-muitos, sendo representado pela tabela associativa ecoponto_material. Dessa forma, um ecoponto pode aceitar diferentes tipos de materiais e um mesmo material pode estar associado a diferentes ecopontos.
 
-Figura 1 – Diagrama do banco de dados do EcoSid
+### Diagrama do Banco de Dados
 
-[INSERIR AQUI A IMAGEM DO DIAGRAMA DO BANCO DE DADOS]
+![Diagrama do banco de dados EcoSid](imagens/diagramaa.png)
 
-Fonte: Elaborado pela autora (2026).
+*Figura 1 – Diagrama do banco de dados do projeto EcoSid.*
 
 6.2 Implementação e Manipulação de Dados
 
