@@ -465,3 +465,15 @@
 
     transform: translateY(-2px);
 }
+
+/* ==========================================
+   MENU MOBILE
+========================================== */
+
+@media (max-width: 991px) {
+
+    .navbar-toggler {
+        display: block !important;
+    }
+
+}
