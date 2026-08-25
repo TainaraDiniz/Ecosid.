@@ -15,8 +15,8 @@
         "bairro": "São Bento",
         "horario": "07:00 às 16:00",
         "materiais": "Plástico, papel e eletrônicos",
-        "latitude": -20.9260,
-        "longitude": -54.9600
+        "latitude": -20.93908328013871,
+        "longitude": -54.9586299126424
     },
 
 
@@ -25,8 +25,8 @@
         "bairro": "Jandaia",
         "horario": "08:00 às 17:00",
         "materiais": "Vidro, metal e plástico",
-        "latitude": -20.9400,
-        "longitude": -54.9750
+        "latitude": -20.93687987160673,
+        "longitude": -54.96567254902148
     }
 
 ]
