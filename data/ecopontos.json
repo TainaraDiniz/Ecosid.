@@ -4,7 +4,9 @@
   "bairro":"Centro",
   "endereco":"Rua Exemplo, 150",
   "materiais":"Papel, Plástico, Vidro e Metal",
-  "horario":"Segunda a Sexta - 08:00 às 17:00"
+  "horario":"Segunda a Sexta - 08:00 às 17:00",
+  "latitude": -20.930116645725892,
+  "longitude": -54.96435274571533
 },
 
 
